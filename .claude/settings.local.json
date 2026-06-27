@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(java -jar target/StudentManagementSystem-0.0.1-SNAPSHOT.jar)",
+      "Bash(echo \"started pid $!\")",
+      "Bash(kill %1)",
+      "Bash(export PGPASSWORD='Pratibha@1')",
+      "Bash(\"/c/Program Files/PostgreSQL/17/bin/psql.exe\" -U postgres -h localhost -p 5432 -d StudentManagementSystem -c \"\\\\dt\" -c \"SELECT column_name, data_type FROM information_schema.columns WHERE table_name='student';\")"
+    ]
+  }
+}
